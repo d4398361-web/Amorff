@@ -1,48 +1,26 @@
 {
-    "compilerOptions": {
-        "target": "ES2020",
-        "module": "ES2020",
-        "jsx": "react",
-        "moduleResolution": "Node",
-        "lib": [
-            "ES2020",
-            "DOM",
-            "DOM.Iterable"
-        ],
-        "strict": true,
-        "noEmit": true,
-        "sourceMap": true,
-        "noImplicitReturns": true,
-        "skipLibCheck": true,
-        "skipDefaultLibCheck": true,
-        "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true,
-        "baseUrl": ".",
-        "importsNotUsedAsValues": "preserve",
-        "paths": {
-            "@/*": [
-                "./resources/scripts/*"
-            ],
-            "@feature/*": [
-                "./resources/scripts/components/server/features/*"
-            ],
-            "@definitions/*": [
-                "./resources/scripts/api/definitions/*"
-            ]
-        },
-        "plugins": [
-            {
-                "name": "typescript-plugin-tw-template"
-            }
-        ],
-        "typeRoots": [
-            "node_modules/@types"
-        ]
-    },
-    "include": [
-        "./resources/scripts/**/*"
+  "compilerOptions": {
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "module": "ESNext",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
     ],
-    "exclude": [
-        "/node_modules/"
-    ]
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  }
 }
